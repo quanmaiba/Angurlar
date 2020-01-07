@@ -1,0 +1,62 @@
+<div class="calculator card">
+    <div class="maindisplay">
+        <div class="subdisplay">{{ subText }}</div>
+        {{ mainText }}
+    </div>
+    <!-- <input type="number" class="calculator-screen" [value]="result" disabled /> -->
+    <!-- <span class="calculator-screen z-depth-1">{{cardName}}</span> -->
+    <div class="calculator-keys">
+        <button type="button" class="operator btn btn-info" value="+" (click)="pressKey('+')">+</button>
+        <button type="button" class="operator btn btn-info" value="-" (click)="pressKey('-')">-</button>
+        <button type="button" class="operator btn btn-info" (click)="pressKey('x')">
+      &times;
+    </button>
+        <button type="button" class="operator btn btn-info" (click)="pressKey('/')">
+      &divide;
+    </button>
+
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('7')">
+      7
+    </button>
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('8')">
+      8
+    </button>
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('9')">
+      9
+    </button>
+
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('4')">
+      4
+    </button>
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('5')">
+      5
+    </button>
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('6')">
+      6
+    </button>
+
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('1')">
+      1
+    </button>
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('2')">
+      2
+    </button>
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('3')">
+      3
+    </button>
+
+        <button type="button" class="btn btn-light waves-effect" (click)="pressKey('0')">
+      0
+    </button>
+        <button type="button" class="decimal function btn btn-secondary" value="." (click)="pressKey('.')">
+      .
+    </button>
+        <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" (click)="allClear()">
+      AC
+    </button>
+
+        <button type="submit" class="equal-sign operator btn btn-primary" (click)="getAnswer()">
+      =
+    </button>
+    </div>
+</div>
